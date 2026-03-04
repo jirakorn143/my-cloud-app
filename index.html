@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
- <title>My First Cloud App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+section {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    width: 85%;
+    max-width: 800px;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #764ba2;
+    margin-bottom: 15px;
+}
+
+.skills span {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 40px;
+}
+</style>
 </head>
+
 <body>
- <h1>Hello World!</h1>
- <p>This application was deployed to the cloud by an IT student.</p>
+
+<header>
+    <h1>ธัญธร สาลีสังข์</h1>
+    <p>Web Developer | IT Student</p>
+</header>
+
+<section>
+
+<div class="card">
+    <h2>รักครูเมย์</h2>
+    <p>กำลังศึกษาเทคโนโลยีสารสนเทศ สนใจการพัฒนาเว็บไซต์ และการออกแบบระบบฐานข้อมูล มีความมุ่งมั่นในการพัฒนาทักษะด้านเทคโนโลยีอย่างต่อเนื่อง</p>
+</div>
+
+<div class="card">
+    <h2>ทักษะ (Skills)</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>SQL</span>
+        <span>GitHub</span>
+    </div>
+</div>
+
+<div class="card">
+    <h2>0800543999</h2>
+    <p>Email: jirakorn143@gmail.com</p>
+    <p>GitHub: <a href="#">github.com/username</a></p>
+</div>
+
+</section>
+
+<footer>
+    © 2026 My Portfolio
+</footer>
+
 </body>
-<h1>CI/CD
-PaaS</h1>
 </html>
